@@ -27,11 +27,21 @@
 
 #___________________
 
-def short_word(word)
-  if word.length < 8
-    return false
-  else return true
-  end
-end
+# def short_word(word)
+#   if word.length < 8
+#     return false
+#   else return true
+#   end
+# end
+#
+# puts short_word("alghakjhghjhsfjkghsk")
 
-puts short_word("alghakjhghjhsfjkghsk")
+#_________________________
+
+# def greet_backwards(name)
+# return "Hello,#{name.reverse * 2}! Welcome home!"
+# end
+#
+# puts(greet_backwards("Amanda"))
+
+#__________________________
