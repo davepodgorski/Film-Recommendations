@@ -1,28 +1,25 @@
-film1 = "Science Fair"
-film2 = "Creed"
-film3 = "The Hangover"
-film4 = "A Wacky Movie by Wes Anderson"
+documentary = "Science Fair"
+drama = "Creed"
+comedy = "The Hangover"
+dramedy = "A Wacky Movie by Wes Anderson"
 
 
-puts "On a scale of 1 to 5, how much do you like documentaries?"
-  user_input = gets.chomp.to_i
-  if user_input >= 4
-    puts "You should totally see #{film1}."
-  end
+puts "On a scale of 1 - 5, how much do you like documentaries?"
+user_input = gets.chomp.to_i
+puts "On a scale of 1 - 5, how much do you like comedies?"
+user_input2 = gets.chomp.to_i
+puts "On a scale of 1 - 5, how much do you like drama films?"
+user_input3 = gets.chomp.to_i
 
-    if user_input < 4
-    puts "On a scale of 1 to 5, how much do you like dramas?"
-    user_input2 = gets.chomp.to_i
-    puts "On a scale of 1 to 5, how much do you like comedies?"
-    user_input3 = gets.chomp.to_i
-    end
 
-      if user_input2 <= 4 && user_input3 >= 4
-      puts "Let's watch #{film4}!"
-    elsif user_input2 == 4 && user_input3 < 4
-      puts "Let's watch #{film2}!"
-    elsif user_input2 == 4 && user_input3 >= 4
-      puts "Let's watch #{film3}!"
-      else
-      puts "How about you just read a book?"
-      end
+if user_input >= 4
+  puts "Watch #{documentary}! It's awesome!"
+elsif user_input2 >= 4 && user_input3 < 4
+  puts "Watch #{drama}! It's awesome!"
+elsif user_input2 >= 4 && user_input3 < 4
+  puts "Watch #{comedy}! It's awesome!"
+elsif user_input2 >= 4 && user_input3 < 4
+  puts "Watch #{dramedy}! It's awesome!"
+else
+  puts "Just read a book, dude."
+end
