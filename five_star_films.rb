@@ -14,11 +14,11 @@ user_input3 = gets.chomp.to_i
 
 if user_input >= 4
   puts "Watch #{documentary}! It's awesome!"
-elsif user_input2 >= 4 && user_input3 < 4
+elsif user_input < 4 && user_input2 >= 4 && user_input3 < 4
   puts "Watch #{drama}! It's awesome!"
-elsif user_input2 >= 4 && user_input3 < 4
+elsif user_input < 4 && user_input2 < 4 && user_input3 >= 4
   puts "Watch #{comedy}! It's awesome!"
-elsif user_input2 >= 4 && user_input3 < 4
+elsif user_input < 4 && user_input2 >= 4 && user_input3 >= 4
   puts "Watch #{dramedy}! It's awesome!"
 else
   puts "Just read a book, dude."
